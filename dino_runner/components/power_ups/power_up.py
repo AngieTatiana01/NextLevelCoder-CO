@@ -1,4 +1,3 @@
-import imp
 from pygame.sprite import Sprite
 from dino_runner.utils.constants import SCREEN_WIDTH, SCREEN_HEIGHT
 import random

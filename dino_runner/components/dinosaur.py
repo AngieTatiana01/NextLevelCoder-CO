@@ -1,4 +1,4 @@
-from sre_constants import JUMP
+
 import pygame
 from pygame.sprite import Sprite 
 
@@ -99,12 +99,12 @@ class Dinosaur(Sprite):
             time_to_show = round((self.shield_time_up - pygame.time.get_ticks()) / 1000, 2)
             if time_to_show >= 0:
                 if self.show_text:
-                    fond = pygame.font.Font('freesansbold.ttf', 18)
+                    fond = pygame.font.Font('freesansbold.ttf', 20)
                     text = fond.render(f'Shield enabled for {time_to_show}',
                                        True,
                                        (0, 0, 0))
                     textRect = text.get_rect()
-                    textRect.center = (500, 40)
+                    textRect.center = (500, 100)
                     screen.blit(text, textRect)
             else:
                 self.shield = False
